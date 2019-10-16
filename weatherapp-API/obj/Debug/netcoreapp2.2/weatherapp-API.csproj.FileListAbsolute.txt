@@ -1,0 +1,14 @@
+D:\InterviewApp\weatherapp-API\bin\Debug\netcoreapp2.2\weatherapp-API.deps.json
+D:\InterviewApp\weatherapp-API\bin\Debug\netcoreapp2.2\weatherapp-API.runtimeconfig.json
+D:\InterviewApp\weatherapp-API\bin\Debug\netcoreapp2.2\weatherapp-API.runtimeconfig.dev.json
+d:\InterviewApp\weatherapp-API\bin\Debug\netcoreapp2.2\weatherapp-API.dll
+d:\InterviewApp\weatherapp-API\bin\Debug\netcoreapp2.2\weatherapp-API.pdb
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.csprojAssemblyReference.cache
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.csproj.CoreCompileInputs.cache
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.RazorAssemblyInfo.cache
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.RazorAssemblyInfo.cs
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.AssemblyInfoInputs.cache
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.AssemblyInfo.cs
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.RazorTargetAssemblyInfo.cache
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.dll
+d:\InterviewApp\weatherapp-API\obj\Debug\netcoreapp2.2\weatherapp-API.pdb
