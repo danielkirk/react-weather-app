@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "036eab2d79426dea52bb31c0e722d4752b507df7"
+    "signature": "41233148e77315ab72d42426ce1e717f60dd6bff"
   },
   "compilationOptions": {
     "defines": [
@@ -28,7 +28,8 @@
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.1",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.1.0"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.1.0",
+          "Strathweb.CacheOutput.WebApi2": "0.11.0"
         },
         "runtime": {
           "weatherapp-API.dll": {}
@@ -275,6 +276,22 @@
         },
         "compile": {
           "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {}
+        }
+      },
+      "Strathweb.CacheOutput.WebApi2/0.11.0": {
+        "runtime": {
+          "lib/net45/WebApi.OutputCache.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/net45/WebApi.OutputCache.V2.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net45/WebApi.OutputCache.Core.dll": {},
+          "lib/net45/WebApi.OutputCache.V2.dll": {}
         }
       },
       "System.ValueTuple/4.5.0": {},
@@ -3367,6 +3384,13 @@
       "sha512": "sha512-UXgRNtmOIc/gw3bvdof4hZu4rL9xIUGeSWklasd+Oj9SF7EH+OTu43/Qsz6YYrqX2sem2qxd004LwtW/CWpVHg==",
       "path": "npgsql.entityframeworkcore.postgresql.design/1.1.1",
       "hashPath": "npgsql.entityframeworkcore.postgresql.design.1.1.1.nupkg.sha512"
+    },
+    "Strathweb.CacheOutput.WebApi2/0.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xNzoj67mge32BzWnqMcWArgU2l530/zKUX9HNq64fYjJVncrE5Kc4PfOMlsB8PDRmX3l425yg42AjXgk1iAAig==",
+      "path": "strathweb.cacheoutput.webapi2/0.11.0",
+      "hashPath": "strathweb.cacheoutput.webapi2.0.11.0.nupkg.sha512"
     },
     "System.ValueTuple/4.5.0": {
       "type": "package",

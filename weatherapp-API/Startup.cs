@@ -29,7 +29,9 @@ namespace weatherapp_API
         {
             services.AddDbContext<WeatherAppContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddResponseCaching();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +40,8 @@ namespace weatherapp_API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseResponseCaching();
+                app.UseCors();
             }
             else
             {

@@ -3035,6 +3035,17 @@
           }
         }
       },
+      "Strathweb.CacheOutput.WebApi2/0.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/WebApi.OutputCache.Core.dll": {},
+          "lib/net45/WebApi.OutputCache.V2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebApi.OutputCache.Core.dll": {},
+          "lib/net45/WebApi.OutputCache.V2.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7785,6 +7796,20 @@
         "version.txt"
       ]
     },
+    "Strathweb.CacheOutput.WebApi2/0.11.0": {
+      "sha512": "xNzoj67mge32BzWnqMcWArgU2l530/zKUX9HNq64fYjJVncrE5Kc4PfOMlsB8PDRmX3l425yg42AjXgk1iAAig==",
+      "type": "package",
+      "path": "strathweb.cacheoutput.webapi2/0.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/WebApi.OutputCache.Core.dll",
+        "lib/net45/WebApi.OutputCache.V2.dll",
+        "lib/net45/WebApi.OutputCache.V2.xml",
+        "strathweb.cacheoutput.webapi2.0.11.0.nupkg.sha512",
+        "strathweb.cacheoutput.webapi2.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -12217,7 +12242,8 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "NpgSql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.1",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.1.0"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.1.0",
+      "Strathweb.CacheOutput.WebApi2 >= 0.11.0"
     ]
   },
   "packageFolders": {
@@ -12285,6 +12311,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "Strathweb.CacheOutput.WebApi2": {
+            "target": "Package",
+            "version": "[0.11.0, )"
           }
         },
         "imports": [
@@ -12294,5 +12324,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Strathweb.CacheOutput.WebApi2 0.11.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "Strathweb.CacheOutput.WebApi2",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }

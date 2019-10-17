@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using weatherapp_API.Models;
@@ -9,9 +10,10 @@ using weatherapp_API.Models;
 namespace weatherapp_API.Migrations
 {
     [DbContext(typeof(WeatherAppContext))]
-    partial class WeatherAppContextModelSnapshot : ModelSnapshot
+    [Migration("20191017064018_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,11 +32,11 @@ namespace weatherapp_API.Migrations
 
                     b.Property<string>("Icon");
 
-                    b.Property<decimal>("MaxTemperature");
+                    b.Property<int>("MaxTemperature");
 
-                    b.Property<decimal>("MinTemperature");
+                    b.Property<int>("MinTemperature");
 
-                    b.Property<decimal>("Temperature");
+                    b.Property<int>("Temperature");
 
                     b.Property<string>("WeatherType");
 

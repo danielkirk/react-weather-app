@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace weatherapp_API.Migrations
@@ -17,7 +18,10 @@ namespace weatherapp_API.Migrations
                     Temperature = table.Column<int>(nullable: false),
                     MinTemperature = table.Column<int>(nullable: false),
                     MaxTemperature = table.Column<int>(nullable: false),
-                    WeatherType = table.Column<string>(nullable: true)
+                    WeatherType = table.Column<string>(nullable: true),
+                    Icon = table.Column<string>(nullable: true),
+                    ZipCode = table.Column<int>(nullable: false),
+                    CreatedDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

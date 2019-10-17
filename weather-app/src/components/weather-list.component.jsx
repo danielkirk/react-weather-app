@@ -34,10 +34,10 @@ function WeatherList(props) {
   return (
     <div>
       <div className="card-deck">
-        {props.list.list.map(item => {
+        {props.list.list.map((item, index) => {
           var icon = getWeatherIcons(weatherIcons, item.weather[0].id);
           return (
-            <div className="card col-md-3">
+            <div key={index} className="card col-md-3">
               <div className="card-title">
                 <h1>{props.list.city.name}</h1>
               </div>
@@ -49,8 +49,8 @@ function WeatherList(props) {
                 {props.minMaxTemp(item.main.temp_max, item.main.temp_max)}
                 <h4 className="py-3">{item.weather[0].main}</h4>
               </div>
-              <div class="card-footer">
-                <small class="text-muted">
+              <div className="card-footer">
+                <small className="text-muted">
                   {new Date(item.dt_txt).toLocaleString()}
                 </small>
               </div>
