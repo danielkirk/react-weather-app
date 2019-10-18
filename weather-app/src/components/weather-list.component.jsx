@@ -10,7 +10,6 @@ function WeatherList(props) {
     Clear: "wi-day-sunny",
     Clouds: "wi-day-fog"
   };
-  console.log("hi commit")
 
   function getWeatherIcons(icons, rangeId) {
     switch (true) {
