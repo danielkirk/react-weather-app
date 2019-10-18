@@ -7,5 +7,6 @@ namespace weatherapp_API.Models
         public WeatherAppContext(DbContextOptions<WeatherAppContext> options) : base(options)
         { }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<WeatherHistory> WeatherHistories { get; set; }
     }
 }
