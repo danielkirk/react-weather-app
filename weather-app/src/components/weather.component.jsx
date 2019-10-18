@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import WeatherList from "./weather-list.component";
 import { Label } from "semantic-ui-react";
+import NavBar from "./navbar";
 import axios from "axios";
 import "./styling/style.css";
 
@@ -116,7 +117,7 @@ class Weather extends Component {
     );
     const weatherArray = await weatherArrayCall.json();
     const response = await weatherCall.json();
-    if (response.message || weatherArray.message) {
+    if (response.message) {
       return alert("Please Enter valid zip code!");
     }
     this.setState(
@@ -141,6 +142,10 @@ class Weather extends Component {
   render() {
     return (
       <React.Fragment>
+        <NavBar />
+        <br />
+        <br />
+        <br />
         <div className="container">
           <form onSubmit={this.loadWeather}>
             <div className="row">

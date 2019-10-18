@@ -25,7 +25,7 @@ namespace weatherapp_API.Controllers
             {
                 throw new Exception("Address is empty!");
             }
-            address.CreatedDate = DateTime.UtcNow;
+            address.CreatedDate = DateTime.Now;
             _context.Addresses.Add(address);
             var result = await _context.SaveChangesAsync();
             return (result > 0) ? address.Id : 0;
